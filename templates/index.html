@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Human Activity Recognition Systen</title>
+    <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+    <!-- <link rel="stylesheet" href="assets/fonts/font-awesome.min.css"> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
+    <nav class="navbar navbar-light  navbar-expand-md fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#"><img src = static/assets/img/tifr-logo-blue.png width="100" height="50">
+            <img src = static/assets/img/fcritlogo.png width="100" height="100"> </a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#demo">DEMO</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#example">Examples</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image:url('static/assets/img/intro-bg.jpg');">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading" style="font-size: 65px;line-height: 70px;">HUMAN ACTIVITY Recognition</h1>
+                        <!-- <p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created with love.</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a> -->
+                        <p class="intro-text">An Initiative to Detect and Prevent Accidents in Our Society.</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center content-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>About HAR</h2>
+                    <p class="intro-text">This project envisions a system that has a dual purpose use: <br><a href="#demo"> Drowsy Driver Detection</a> &amp;
+                        <a href="#demo">Fight Detection</a>.
+                    
+                    <!-- <ul> -->
+                        <li><b><u>Drowsy Driver Detection</u></b> is used to detect drowsiness and alert the driver to take a break.
+                           It analyzes the driver&apos;s behavior, such as facial expressions, head and eye movements, and steering patterns to detect signs
+                            of drowsiness, such as drooping eyelids and alerts the driver to take a break.
+                        </li><br>
+                        <li> <b><u>Fight Detection</u></b> aims to provide an automated system for detecting aggressive and violent behavior.This application of human activity recognition has the potential to significantly enhance campus safety and security measures.</li>
+                         
+                    <!-- </ul>     -->
+                </p>   
+                    
+                    <p>The scope of our current project is limited to  alerting drivers when they start to feel drowsy preventing road accidents 
+                        and detecting small fights occurring in campus.
+                    <br>
+                    <u><i>The suggested applications can be used to save lives and property</i></u>
+                </p>
+
+                    <!-- <p>Grayscale is a free Bootstrap theme. It can be yours right now, simply download the template on&nbsp;<a href="#">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                    <p>This theme features stock photos by&nbsp;<a href="#">Gratisography</a>&nbsp;along with a custom Google Maps skin courtesy of&nbsp;<a href="#">Snazzy Maps</a>.</p>
+                    <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="text-center download-section content-section" id="download" style="background-image: url('static/assets/img/downloads-bg.jpg');border-color: var(--bs-gray-300);"> -->
+    <section class="text-center download-section content-section" id="demo" style="background-image: url('static/assets/img/black2.jpg');border-color: var(--bs-gray-300);">
+
+        <div class="row">
+            <div class="col">
+                <h1>DEMONSTRATION</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Fight Detection</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Drowsiness Detection</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="row">
+                <!-- <div class="col-md-6"><img src="static/assets/img/fight.png" width="367" height="315"></div> -->
+                <div class="col-md-6">
+                    <img src="/static/assets/img/fight.gif" width="367" height="315"style="max-width:95%;border:6px outset #545565;">
+                </div>
+                <div class="col-md-6"><img src="/static/assets/img/drowsy_driver_crop.gif" width="386" height="313" style="max-width:95%;border:6px outset #545565;">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="background: rgba(57,111,91,0);color: var(--bs-white);box-shadow: 0px 0px var(--bs-white);"><a href = "{{ url_for('fight') }}">TRY ME </a></button></div>
+
+                <div class="col-md-6"><button class="btn btn-primary" data-bss-hover-animate="pulse"  type="button" style="background: rgba(57,111,91,0);color: var(--bs-white);box-shadow: 0px 0px var(--bs-white);"><a href = "{{ url_for('sleepy_driver') }}">TRY ME</a></button></div>
+                              
+            </div>
+        </div>
+    </section>
+    <section class="text-center content-section" id="example">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Examples</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <video width="350" height="270" loop autoplay muted>
+                        <source src="static/assets/img/example1.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video> 
+                </div>
+                <div class="col-md-4">
+                    <video width="350" height="270" loop autoplay muted>
+                        <!-- <source src="static/assets/img/sleep_self3.mp4" type="video/mp4"> -->
+                        <source src="/static/assets/img/example3.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video> 
+                </div>
+                <div class="col-md-4">
+                    <video width="350" height="270" loop autoplay muted>
+                        <source src="/static/assets/img/example1.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video> 
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <video width="350" height="270" loop autoplay muted>
+                        <source src="/static/assets/img/fight_vid.mp4" type="video/mp4">
+                        
+                      Your browser does not support the video tag.
+                      </video> 
+                </div>
+                <div class="col-md-4">
+                    <video width="350" height="270" loop autoplay muted>
+                        <source src="/static/assets/img/fight_vid.mp4" type="video/mp4">
+                        
+                      Your browser does not support the video tag.
+                      </video> 
+                </div>
+                <div class="col-md-4">
+                    <video width="350" height="270" loop autoplay muted>
+                        <source src="static/assets/img/example_fight3.mp4.mp4" type="video/mp4">
+                       
+                      Your browser does not support the video tag.
+                      </video> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <video width="350" height="270" loop autoplay muted >
+                        <source src="/static/assets/img/example_fight2.mp4.mp4" type="video/mp4">
+                      
+                      Your browser does not support the video tag.
+                      </video> 
+                </div>
+                <div class="col-md-4">
+                    <video width="350" height="270" loop autoplay muted>
+                        <source src="/static/assets/img/fight_vid.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video> 
+                </div>
+                <div class="col-md-4">
+                    <video width="350" height="270" loop autoplay muted>
+                        <source src="/static/assets/img/fight_vid.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <p>HAR ©&nbsp;tifr 2023</p>
+        </div>
+    </footer>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/assets/js/bs-init.js"></script>
+    <script src="static/assets/js/grayscale.js"></script>
+</body>
+
+</html>

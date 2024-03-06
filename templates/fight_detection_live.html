@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+        <!-- <link rel="stylesheet" href="assets/fonts/font-awesome.min.css"> -->
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/fonts/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h3 class="mt-5">Live Streaming</h3>
+                <img src="{{ url_for('fight_detect2') }}" width="100%">
+                <div class="col-md-6"><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="background: rgba(57,111,91,0);color: var(--bs-white);box-shadow: 0px 0px var(--bs-white);"><a href = "{{ url_for('index') }}">GO BACK</a></button></div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+</html>

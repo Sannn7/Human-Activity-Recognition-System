@@ -1,0 +1,17 @@
+Flask
+opencv-python
+numpy
+pyqt5
+pyqt5-tools
+tensorflow
+scikit-learn
+Pillow
+keras
+playsound
+torch
+pandas
+torchvision
+moviepy
+albumentations
+pytube
+IPython
